@@ -23,14 +23,14 @@ let called = true;
             console.log(wthr); 
             console.log(typeof wthr); 
             // console.log("This is in lower" + wthr.toLowercase());
-            if(wthr.localeCompare("Clear") == 0 ){
+            if(parseInt(temp) <= 2){
+                setBgImg("cold");
+            }
+            else if(wthr.localeCompare("Clear") == 0 ){
                 setBgImg("Clear");
             }
             else if(wthr.localeCompare("Haze") == 0){
                 setBgImg("Haze");
-            }
-            else if(parseInt(temp) <= 2){
-                setBgImg("cold");
             }
             else if(wthr.localeCompare("Clouds") == 0){
                 setBgImg("Clouds");
