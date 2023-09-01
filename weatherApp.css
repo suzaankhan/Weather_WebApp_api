@@ -10,9 +10,8 @@ body{
 }
 .box{
     color: #f5f6f7;
-    width: 400px;
+    /* width: 400px; */
     margin-top: -50px;
-    /* margin: auto; */
     background-color: #1b1b32;
     border-radius: 10px;
     font-family: sans-serif;
@@ -20,7 +19,7 @@ body{
 }
 input{
     width: 220px;
-    margin-left: 40px;
+    margin-left: 25px;
     margin-top: 30px;
     font-size: 22px;
     background-color:#343457;
@@ -31,7 +30,7 @@ input{
 button{
     width: 90px;
     font-size: 22px;
-    margin-left: 15px;
+    margin: 0 15px 0 15px;
     border-radius: 5px;
     border: none;
     background-color: #343457;
@@ -44,9 +43,11 @@ button:hover{
     cursor: pointer;
     padding: 9px;
     opacity: 100%;
+    /* box-shadow: 0 0 20px 0 #f5f6f7; */
 }
 ::placeholder{
     color: #f5f6f7;
+    /* font-family: sans-serif; */
     font-size: 17px;
     opacity: 40%;
 }
@@ -55,6 +56,7 @@ hr{
     margin-right: 25px;
     border: 2px solid #343457;
     margin-top: 15px;
+    /* background-color: aqua; */
 }
 h3{
     text-align: center;
@@ -62,7 +64,7 @@ h3{
     opacity: 20%;
 }
 h2, h1{
-    margin-left: 25px;
+    margin-left: 15px;
     margin-top: 10px;
 }
 #weather, #humidity{
