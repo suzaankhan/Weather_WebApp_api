@@ -6,7 +6,7 @@ let called = true;
         }
 
         function find_wh(){
-            cityName = document.getElementById("inp").value;
+            cityName = document.getElementById("inp").value.trimEnd();
             
             apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=${cityName}&appid=8e2d4a97e941c0022fa82bc3e886d0dd`;
             fetch(apiUrl)
@@ -20,9 +20,7 @@ let called = true;
             humidity = (data.main.humidity);
             wind_speed = `${data.wind.speed} miles/hr`;
             wthr = data.weather[0].main;
-            console.log(wthr); 
-            console.log(typeof wthr); 
-            // console.log("This is in lower" + wthr.toLowercase());
+
             if(parseInt(temp) <= 2){
                 setBgImg("cold");
             }
@@ -30,7 +28,10 @@ let called = true;
                 setBgImg("Clear");
             }
             else if(wthr.localeCompare("Haze") == 0){
-                setBgImg("Haze");
+                // setBgImg("Haze");
+                document.body.style.backgroundImage = `url('Haze.jpg')`;
+                document.body.style.backgroundSize = "100vw 100vh";
+                document.body.style.opacity = "80%";
             }
             else if(wthr.localeCompare("Clouds") == 0){
                 setBgImg("Clouds");
@@ -42,7 +43,7 @@ let called = true;
                 setBgImg("mist");
             }
             else{
-                alert("error occured in adding images");
+                alert("No image was found for respective weather but can be added later :)");
             }
             
             if(called){
@@ -58,8 +59,7 @@ let called = true;
         })
         .catch(error => {
             //Handle errors if the request fails
-            window.alert("Some error occured");
-            console.log(error);
+            window.alert("Please enter a valid input");
         });
         }
 
