@@ -3,19 +3,23 @@ body{
     width: 100vw;
     height: 100vh;
     display: flex;
+    justify-content: center;
+    align-items: center;
     background-size: cover;
     background-repeat: no-repeat; 
 }
 .box{
     color: #f5f6f7;
-    width: 450px;
-    margin-top: -200px;
-    margin: auto;
+    width: 400px;
+    margin-top: -50px;
+    /* margin: auto; */
     background-color: #1b1b32;
     border-radius: 10px;
     font-family: sans-serif;
+    /* display: flex; */
 }
 input{
+    width: 220px;
     margin-left: 40px;
     margin-top: 30px;
     font-size: 22px;
@@ -23,7 +27,6 @@ input{
     border: none;
     border-radius: 5px;
     color: #f5f6f7;
-    /* font-family: sans-serif; */
 }
 button{
     width: 90px;
@@ -62,7 +65,7 @@ h3{
     opacity: 20%;
 }
 h2, h1{
-    margin-left: 40px;
+    margin-left: 25px;
     margin-top: 10px;
 }
 #weather, #humidity{
