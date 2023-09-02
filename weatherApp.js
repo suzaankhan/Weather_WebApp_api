@@ -52,7 +52,7 @@ let called = true;
             called = false;
             // document.getElementById("temp").innerText = tempString;
             document.getElementById("cityname_temp").innerText = `${city}: ${tempString}`;
-            document.getElementById("weather").innerText = `Weather: ${wthr}`;
+            document.getElementById("weather").innerText = `Weather: ${wthr}%`;
             document.getElementById("humidity").innerText = `Humidity: ${humidity}`;
             document.getElementById("wind_speed").innerText = `Wind Speed: ${wind_speed}`;
             
