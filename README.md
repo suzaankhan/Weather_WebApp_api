@@ -4,4 +4,4 @@ Link: https://suzaankhan.github.io/Weather_WebApp_api/
 Desktop view is recommended,thank you
 
 ## App
-https://github.com/user-attachments/assets/7963cff4-dd60-4cf4-a8e3-d33db656c238
+https://github.com/user-attachments/assets/d57001a0-69b3-4fd1-8ad0-66d52d951c5e
